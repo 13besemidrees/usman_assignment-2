@@ -1,0 +1,97 @@
+<html>
+<head>
+
+		
+ <link rel="stylesheet" type="text/css" href="style1.css" /> 
+ <link rel="stylesheet" type="text/css" href="style.css" /> 
+  <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="calender.css" />
+  <script type="text/javascript" src="calender.js"></script>
+ <script type="text/javascript" src="clock.js"></script>
+		<title> Assignment#2 </title>
+</head>
+
+<body onload = "digfunc()">
+<div id= "container" >
+<div class = "row-1" style="margin-left:30%;">
+	<img src="welcome.png">
+
+</div>
+
+<div id="spacer" style="height:50px;">
+
+</div>
+
+<div  class="col-1"></div>
+
+<div  class="col-4" id = "old_clock" onclick="newClock()">
+
+	
+	<div id="digwatch" style ="margin top: 5px">
+	
+		<div class="digital-wrap">
+		<div style="text-align:center;width:100%;">
+			<ul class="digit-hours">
+			</ul>
+			<ul class="digit-minutes">
+			</ul>
+			<ul class="digit-seconds">
+			</ul>
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+<div class="col-4" id="old_cal" onclick="newCalender()">
+<div id="calimg"><img style="width:100%; height:16.8%" src="calender.png" >
+	</div>
+	</div>
+
+
+<div class="col-4" id="get_weather" onclick="weatherNew()" style="background-color:black; font-family:Verdana; font-size:40px; font-weight:bold; color:white">
+
+ WEATHER
+	</div>
+	</div>
+<div  class="col-1"></div>
+
+</div>
+</div>
+
+<div class="col-10" id="new_clock" >
+<div id="watch2">
+  <div class="frame-face"></div>
+  
+  <a id="home-btn" href="dashboard.html"> <img src="home.png" width="95px" height="65px"  ></a>
+  <ul class="digits">
+    <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>
+    <li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li>
+  </ul>
+  <div class="hours-hand"></div>
+  <div class="minutes-hand"></div>
+  <div class="seconds-hand"></div>
+</div>
+	</div>
+<div id = "newcalendar">
+	<a id="home-btn" href="dashboard.html"> <img src="home.png" width="95px" height="65px"  ></a>
+	
+	<div class="calendar">
+			<script>calendar();</script>
+	</div>
+	
+	</div>
+	
+	<div id="newweather">
+		<a id="home-btn" href="dashboard.html"> <img src="home.png" width="95px" height="65px"  ></a>
+		</div>
+	
+	
+	
+
+
+	
+</body>
+
+</html>
+
